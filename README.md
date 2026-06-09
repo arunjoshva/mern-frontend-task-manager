@@ -1,73 +1,130 @@
-# React + TypeScript + Vite
+# Task Manager Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Task Management Web Application built with React, TypeScript, Vite, Tailwind CSS, and React Router.
 
-Currently, two official plugins are available:
+This application provides a responsive user interface for user authentication and task management while integrating with a Node.js, Express.js, and MongoDB backend API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend:
+https://mern-taskmanager-frontend.netlify.app/
 
-## Expanding the ESLint configuration
+Backend API:
+https://mern-backend-taskmanager.onrender.com
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Authentication
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* User Registration
+* User Login
+* JWT-based Authentication
+* Protected Routes
+* Persistent User Session
+* Logout Functionality
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Task Management
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* Create Task
+* View Tasks
+* Edit Task
+* Delete Task
+* Toggle Task Status
+* Search Tasks
+* Filter Tasks by Status
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### User Experience
+
+* Responsive Design
+* Flash Success Messages
+* Flash Error Messages
+* Clean Dashboard Interface
+* Form Validation
+* Loading-friendly Architecture
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* React.js
+* TypeScript
+* Vite
+* React Router DOM
+* Axios
+* Tailwind CSS
+
+### Backend Integration
+
+* REST API Integration
+* JWT Authentication
+* Protected API Requests
+
+### Development Tools
+
+* Git
+* GitHub
+* VS Code
+* npm
+
+---
+
+## Application Flow
+
+### Authentication
+
+1. Register a new account
+2. Login with credentials
+3. JWT token is stored locally
+4. Protected routes become accessible
+
+### Task Management
+
+1. Create new tasks
+2. Edit existing tasks
+3. Toggle completion status
+4. Delete tasks
+5. Search tasks
+6. Filter tasks by status
+
+---
+
+## Skills Demonstrated
+
+This project demonstrates proficiency in:
+
+* React.js
+* TypeScript
+* Component-Based Architecture
+* React Hooks
+* React Router
+* Protected Routes
+* API Integration
+* Axios
+* Tailwind CSS
+* Form Handling
+* State Management with useState
+* Side Effects with useEffect
+* Authentication Flow
+* CRUD Operations
+* Responsive UI Development
+* Git & GitHub
+* Frontend-Backend Integration
+
+---
+
+## Deployment
+
+Frontend:
+Netlify
+
+Backend:
+Render
+
+Database:
+MongoDB Atlas
