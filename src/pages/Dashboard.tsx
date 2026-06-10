@@ -48,7 +48,7 @@ const Dashboard = () => {
 
             await fetchTasks();
 
-            setSuccess("Task Added Successfully");            
+            setSuccess("Task Added");            
 
             setTimeout(() => {
                 setSuccess("");
@@ -72,7 +72,7 @@ const Dashboard = () => {
 
             await fetchTasks();
 
-            setSuccess("Task Updated Successfully");
+            setSuccess("Task Updated");
 
             setTimeout(() => {
                 setSuccess("");
@@ -98,7 +98,7 @@ const Dashboard = () => {
 
             await fetchTasks();
 
-            setSuccess("Task Deleted Successfully");
+            setSuccess("Task Deleted");
 
             setTimeout(() => {
                 setSuccess("");
