@@ -13,7 +13,7 @@ const TaskCard = ({task, onDelete, onToggle, onEdit}: Props) => {
     return (
         <div className="bg-white p-4 rounded-xl shadow">
 
-            <div className="flex justify-between">
+            <div className="flex justify-between items-start gap-3">
 
                 <div>
                     <h3 className="text-lg font-semibold">{task.title}</h3>      
@@ -21,7 +21,7 @@ const TaskCard = ({task, onDelete, onToggle, onEdit}: Props) => {
                     <p className="text-gray-600">{task.description}</p>          
                 </div>
 
-                <span className={`px-3 py-3 rounded text-sm 
+                <span className={`px-2 py-1 text-xs font-medium rounded-full whitespace-nowrap
                     ${task.status === "completed" ? "bg-green-100 text-green-700" : "bg-yellow-100 text-yellow-700"}`}>
                         {task.status}
                 </span>
